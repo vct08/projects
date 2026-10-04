@@ -1,0 +1,317 @@
+/*#2596be SAU rgba(37, 150, 190, 1)*/
+/*#38d4f4 SAU rgba(56, 212, 244, 1)*/
+@font-face {
+    font-family: 'Gill Sans Ultra Bold';
+    src: url(fonts/gill-sans-ultra-bold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: rgba(255, 98, 0, 0.8);
+    margin: clamp(.5em, 5wv, 9em);
+}
+.pages{
+    min-height: 100vh;
+}
+
+/*Navigation Bar*/
+/*----------------------------------------------------------------------------------------------------------------*/
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.bar-colored{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1010;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: #FFB52E;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #525252;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: #525252;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid #525252;
+}
+#menu-icon{
+    color: #525252;
+    font-size: 35px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 1535px){
+  header{
+      padding: 15px 3%;
+      transition: .2s;
+  }
+  .icons{
+      padding: 0 3%;
+      transition: .2s;
+  }
+  .scroll-down{
+      right: 3%;
+      transition: .2s;
+  }
+}
+@media(max-width: 1460px){
+  section{
+      padding: 0 12%;
+      transition: .2s;
+  }
+}
+@media(max-width: 1340px){
+  .hero-img img{
+      width: 100%;
+      height: auto;
+  }
+  .hero-text h1{
+      font-size: 75px;
+      margin: 0 0 30px
+  }
+  .hero-text h5{
+      margin-bottom: 25px;
+  }
+}
+@media(max-width: 1195px){
+  section{
+      padding: 0 3%;
+      transition: .2s;
+  }
+  .hero-text{
+      padding-top: 115px;
+  }
+  .hero-img{
+      text-align: center;
+  }
+  .hero{
+      height: 100%;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+  }
+  .icons{
+      display: none;
+  }
+  .scroll-down{
+      display: none;
+  }
+}
+@media(max-width: 990px){
+  #menu-icon{
+      display: block;
+  }
+  .navlist{
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 100%;
+      height: 50vh;
+      background: #FFB52E;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 20px;
+      transition: all .55s ease;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+  }
+  .navlist a{
+      margin-left: 0;
+      display: block;
+      margin: 7px 0;
+      font-size: 20px;
+  }
+  .bar-colored.open{
+    transition: all .55s ease;
+  }
+  .navlist.open{
+    top: 99%;
+    right: 0;
+  }
+}
+@media(max-width){
+  .hero-img img{
+      width: 100%;
+      height: auto;
+  }
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*First*/
+/*----------------------------------------------------------------------------------------------------------------*/
+.first{
+  min-height: 100vh;
+  display: flex;
+  padding: 8%;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 3%;
+}
+.textbox{
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+.textbox h1{
+  font-size: 50px;
+  margin-bottom: 7%;
+}
+.textbox .stars{
+  margin-bottom: 8%;
+  font-size: 10px;
+}
+.textbox h2{
+  font-size: 30px;
+  margin-bottom: 9%;
+}
+.textbox p{
+  font-size: 20px;
+  margin-bottom: 10%;
+}
+.textbox a{
+  margin-top: 5%;
+  display: inline-block;
+  color: white;
+  background: rgba(255, 98, 0, 1);
+  border: 1px solid transparent;
+  padding: 12px 50px;
+  line-height: 1.4;
+  font-size: 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+}
+.textbox a:hover{
+  background: #000066;
+}
+.pic{
+  width: 3000px;
+  background: url("img/WhatsApp Image 2024-11-28 at 22.30.52.jpeg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 5%;
+}
+.checked{
+  color: orange;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*Footer*/
+/*----------------------------------------------------------------------------------------------------------------*/
+footer{
+    background: #111;
+  }
+  .footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+  }
+  /* Hover affect on social media icon */
+  .socialIcons a:hover{
+    background: #111;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  .footerNav{
+    margin: 30px 0;
+  }
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+    padding: 20px;
+    text-align: center;
+  }
+  .footerBottom p, .footerBottom a{
+    color: white;
+  }
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  @media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+  }
+  /*----------------------------------------------------------------------------------------------------------------*/
