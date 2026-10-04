@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluentifix</title>
+    <link rel="website icon" type="png" href="read/img/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="read/read.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<!--Navigation Bar-->
+<!-------------------------------------------------------------------------------------------->
+<header class="navigation-bar">
+    <a href="index.html" class="logo" draggable="false">Fluentifix</a>
+    
+    <ul class="navlist">
+        <li><a href="index.html" draggable="false">Home</a></li>
+        <li><a href="learn.html" draggable="false">Learning</a></li>
+        <li><a href="read.html" draggable="false">Reading</a></li>
+        <li><a href="write.html" draggable="false">Writing</a></li>
+        <li><a href="speak.html" draggable="false">Speaking</a></li>
+        <li><a href="resources.html" draggable="false">Resources</a></li>
+        <li><a href="test.html" draggable="false">Test</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon" draggable="false"></div>
+</header>
+<!-------------------------------------------------------------------------------------------->
+
+<body>
+    <div class="pages first">
+        <h1>Speak, write, and understand a language smoothly</h1>
+        <div class="text">
+            <div class="levels">
+                <button id="loadFile1">A0/A1</button>
+                <button id="loadFile2">A2</button>
+                <button id="button3">B1</button>
+                <button id="button4">B2</button>
+                <button id="button5">C1</button>
+                <button id="button6">C2</button>
+            </div>
+            <div id="def1" class="hidden">
+                <div class="a0a1">
+                    <h2 class="readloud">Read Aloud - Record Yourself</h2>
+                    <p id="randomText">Loading...</p>
+                    <div class="btn-audio">
+                        <div class="audio-recorder">
+                            <h2>Audio Recorder</h2>
+                            <button id="recordButton">Start Recording</button>
+                            <button id="stopButton" disabled>Stop Recording</button>
+                            <audio id="audioPlayback" controls></audio>
+                        </div>
+                        <!-- <button class="rdm-btn" onclick="pickRandomText()">Pick Random Text</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-writing">
+            <p>Task: Write an essay about sth</p>
+            <h2>Write your essay here</h2>
+            <textarea id="essayText" placeholder="Start writing your essay here..."></textarea>
+            <button onclick="saveEssay()">Save Essay</button>
+            <button onclick="submitEssay()">Enter</button>
+            <p id="confirmation">Essay has been successfully sent!</p>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------->
+    <script src="read/read.js"></script>
+
+</body>
+<!--Footer-->
+<!-------------------------------------------------------------------------------------------->
+<footer>
+    <div class="footerContainer">
+        <div class="footerBottom">
+            <p>Copyright &copy; 2025 I Designed by <a href="https://www.instagram.com/victor__sva/" draggable="false"><span class="designer">Sasu Victor</span></a></p>
+        </div>
+    </div>
+</footer>
+<!-------------------------------------------------------------------------------------------->
+</html>

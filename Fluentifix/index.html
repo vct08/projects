@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="eg">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluentifix</title>
+    <link rel="website icon" type="png" href="home/img/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cherry Bomb' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    
+    <link rel="stylesheet" href="home/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<!--Navigation Bar-->
+<!-------------------------------------------------------------------------------------------->
+<header class="navigation-bar">
+    <a href="index.html" class="logo" draggable="false">Fluentifix</a>
+    
+    <ul class="navlist">
+        <li><a href="index.html" draggable="false">Home</a></li>
+        <li><a href="learn.html" draggable="false">Learning</a></li>
+        <li><a href="read.html" draggable="false">Reading</a></li>
+        <li><a href="write.html" draggable="false">Writing</a></li>
+        <li><a href="speak.html" draggable="false">Speaking</a></li>
+        <li><a href="resources.html" draggable="false">Resources</a></li>
+        <li><a href="test.html" draggable="false">Test</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon" draggable="false"></div>
+</header>
+<!-------------------------------------------------------------------------------------------->
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <section id="home" class="pages first">
+        <!--Hero-->
+        <!-------------------------------------------------------------------------------------------->
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Fluentifix</h1>
+                <p>Improve your English effortlessly</p>
+                <a href="#products" draggable="false"><b>About us</b></a>
+            </div>
+            
+            <div class="hero-img">
+                <img src="home/img/logo.png" draggable="false">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!--scrollreveal effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--custom js link-->
+    <script src="home/script.js"></script>
+    <!-------------------------------------------------------------------------------------------->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0 0v90.2C49.7 99.9 105 82 160 65c75.5-23.3 145.5-22.4 222-3 63 16 119 14 173-8 79.5-32.4 156.2-27.6 240-10 82.6 17.4 143-1 205-31.7V0H0Z" fill="#009BE1"></path></svg>    <div class="slogan">
+        <p><i>Fluentifix is an online platform designed to help people improve their English skills through a comprehensive learning experience. It offers English courses that include interactive lessons, books, proficiency tests, and engaging educational games. Fluentify combines structured learning materials with interactive elements to make language acquisition more effective and enjoyable for users of all levels.</i></p>
+    </div>
+    <hr>
+    <!--Ce conține proiectul nostru-->
+    <!-------------------------------------------------------------------------------------------->
+    <section id="products">
+        <div class="impartzire">
+            <div class="left">
+                <p><b>F</b> - Fluency (the ultimate goal of learning a language)</p>
+                <p><b>L</b> - Listening (a crucial skill for mastering English)</p>
+                <p><b>U</b> - Understanding (comprehension is key to communication)</p>
+                <p><b>E</b> - Engagement (active participation speeds up learning)</p>
+                <p><b>N</b> - Native-like (many learners aim to speak naturally)</p>
+                <p><b>T</b> - Talk (practicing speaking builds confidence)</p>
+                <p><b>I</b> - Improvement (progress is part of the journey)</p>
+                <p><b>F</b> - Feedback (essential for correcting mistakes)</p>
+                <p><b>I</b> - Interactive Exercises</p>
+                <p><b>X</b> - eXcellence in Communication</p>
+            </div>
+            <div class="right">
+                <div class="poza"></div>
+            </div>
+        </div>
+
+        <div class="toggle-container">
+            <button class="toggle-button" onclick="toggleText('text1', 'btn1', this)">
+                <span class="arrow">></span>
+                Learning
+            </button>
+            <div class="context">
+                <p id="text1" class="hidden">Explore grammar references, including a list of irregular verbs, tenses, articles and rules for punctuation. This part is designed to be student-friendly and accessible, with clear explanations and plenty of opportunities for practice. Whether students are beginners or advanced learners, they will find these references useful for consolidating their knowledge and becoming more confident in their English skills.</p>
+                <a href="learn.html" id="btn1" class="hidden">FIND NOW</a>
+            </div>
+        </div>
+        
+        <div class="toggle-container">
+            <button class="toggle-button" onclick="toggleText('text2', 'btn2', this)">
+                <span class="arrow">></span>
+                Reading
+            </button>
+            <div class="context">
+                <p id="text2" class="hidden">Explore recommendations regarding practice books for different English levels, ranging from A1 through C2. We will feature reviews and the first couple of pages from the books. In addition to essentially being a curated list of books, we will provide links to free resources like podcasts or YouTube channels where leaners can improve their skills.</p>
+                <a href="read.html" id="btn2" class="hidden btn">FIND NOW</a>
+            </div>
+        </div>
+        
+        <div class="toggle-container">
+            <button class="toggle-button" onclick="toggleText('text3', 'btn3', this)">
+                <span class="arrow">></span>
+                Writing
+            </button>
+            <div class="context">
+                <p id="text3" class="hidden">The process of learning a language naturally through exposure and interaction, rather than memorization and conscious study.</p>
+                <a href="write.html" id="btn3" class="hidden btn">FIND NOW</a>
+            </div>
+        </div>
+        <div class="toggle-container">
+            <button class="toggle-button" onclick="toggleText('text4', 'btn4', this)">
+                <span class="arrow">></span>
+                Speaking
+            </button>
+            <div class="context">
+                <p id="text4" class="hidden">An approach to learning where students engage with content through problem-solving, discussions, and self-assessment, leading to better retention of knowledge.</p>
+                <a href="speak.html" id="btn4" class="hidden btn">FIND NOW</a>
+            </div>
+        </div>
+        <div class="toggle-container">
+            <button class="toggle-button" onclick="toggleText('text5', 'btn5', this)">
+                <span class="arrow">></span>
+                Resources
+            </button>
+            <div class="context">
+                <p id="text5" class="hidden">A virtual learning method that connects students with tutors via digital platforms, offering flexible, personalized education that improves engagement and accessibility.</p>
+                <a href="resources.html" id="btn5" class="hidden btn">FIND NOW</a>
+            </div>
+        </div>
+        <div class="toggle-container">
+            <button class="toggle-button" onclick="toggleText('text6', 'btn6', this)">
+                <span class="arrow">></span>
+                Test
+            </button>
+            <div class="context">
+                <p id="text6" class="hidden">A virtual learning method that connects students with tutors via digital platforms, offering flexible, personalized education that improves engagement and accessibility.</p>
+                <a href="test.html" id="btn6" class="hidden btn">FIND NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------->
+<div class="full-pic"></div>
+<div class="bibliografie">
+    <div class="b-title">
+        <h2>Bibliography</h2>
+    </div>
+    <div class="b-content">
+        <p>Krashen, S. (2004) The Power of Reading - https://www.sdkrashen.com/content/books/the_power_of_reading/the_power_of_reading.pdf</p>
+        <p>Cambridge English - The Importance of Reading for Language Learning - https://www.cambridge.org/elt/blog/2020/01/21/importance-reading-language-learning</p>
+        <p>British Council - How Reading Helps Improve English -https://www.britishcouncil.org/english/skills/reading</p>
+        <p>OECD - The Role of Reading in Academic Success - https://www.oecd.org/education/school/programmeforinternationalstudentassessmentpisa/33690904.pdf</p>
+        <p>The Science Behind Online Learning - Harvard University - https://onlinelearning.harvard.edu/stories/science-behind-online-learning</p>
+        <p>Malcolm Mann, Steve Taylore-Knowles, “Destination C1&C2, Grammar & Vocabulary”, Macmillan Education, Oxford, 2008</p>
+        <p>Bob Obee , Virginia Evans, “Upstream. Upper Intermediate. Limba Engleză L1, clasa a X-a”, Express Publishing, Newbury, 2005</p>
+        <p>Virginia Evans, Jenny Dooley, “Upstream B2. Student's Book”, Express Publishing, Newbury, 2014</p>
+        <p>Alexandra Green, “Activate Your Grammar & Vocabulary for B2: Student's book”, Hamilton House, United Kingdom, 2015</p>
+        <p>Jane Turner, “B2 Key Word Transformation - 200 exam-styled practice exercises”, Prosperity Education, Cambridge, 2022</p>
+        <p>Rick Riordan, “Percy Jackson and the Lightning Thief”, Miramax Books, New York, USA, 2005</p>
+        <p>J. K. Rowling, “Harry Potter and the Philosopher's Stone”, Bloomsbury, London, UK, 1997</p>
+        <p>Jane Austen, “Pride and Prejudice”, Thomas Egerton, London, UK, 1813</p>
+        <p>Jane Austen, “Sense and Sensibility”, Thomas Egerton, London, UK, 1811</p>
+        <p>Eric Carle, “The Very Hungry Caterpillar”, World Publishing Company, New York, USA, 1969</p>
+        <p>Antoine de Saint-Exupéry, “The Little Prince”, Reynal & Hitchcock, Paris, France, 1943</p>
+        <p>Fyodor Dostoevsky, “Crime and Punishment”, The Russian Messenger, Saint Petersburg, Russia, 1866</p>
+        <p>https://nfc.cambridgeschool.edu.in/wp-content/uploads/sites/2/2020/05/THE-VERY-HUNGRY-CATERPILLAR.pdf</p>
+        <p>https://blogs.ubc.ca/edcp508/files/2016/02/TheLittlePrince.pdf</p>
+        <p>https://pwc.res.zabanshenas.ir/Harry_Potter_and_the_Sorcerer_s_Stone_www_libpdf_blog_ir_aba92c0a66.pdf</p>
+        <p>https://www.planetebook.com/free-ebooks/crime-and-punishment.pdf</p>
+        <p>https://www.youtube.com/watch?v=Se5zT8Sjtg4 </p>
+        <p>https://www.youtube.com/watch?v=sCiG6rlk2Bc</p>
+        <p>http://youtube.com/watch?v=O9S70oJAivI </p>
+        <p>https://www.youtube.com/watch?v=Ljjiw9mC_Cg </p>
+        <p>https://www.youtube.com/watch?v=uEj9fX5_5AI</p>
+        <p>https://www.youtube.com/watch?v=d0wV9EC3t14</p>
+    </div>
+</div>
+<!--Footer-->
+<!-------------------------------------------------------------------------------------------->
+<footer>
+    <div class="footerContainer">
+        <div class="footerBottom">
+            <p>Copyright &copy; 2025 I Designed by <a href="https://www.instagram.com/victor__sva/" draggable="false"><span class="designer">Sasu Victor</span></a></p>
+        </div>
+    </div>
+</footer>
+<!-------------------------------------------------------------------------------------------->
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluentifix</title>
+    <link rel="website icon" type="png" href="test/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet" href="test/test.css">
+</head>
+
+<!--Navigation Bar-->
+<!-------------------------------------------------------------------------------------------->
+<header class="navigation-bar">
+    <a href="index.html" class="logo" draggable="false">Fluentifix</a>
+    
+    <ul class="navlist">
+        <li><a href="index.html" draggable="false">Home</a></li>
+        <li><a href="learn.html" draggable="false">Learning</a></li>
+        <li><a href="read.html" draggable="false">Reading</a></li>
+        <li><a href="write.html" draggable="false">Writing</a></li>
+        <li><a href="speak.html" draggable="false">Speaking</a></li>
+        <li><a href="resources.html" draggable="false">Resources</a></li>
+        <li><a href="test.html" draggable="false">Test</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon" draggable="false"></div>
+</header>
+<!-------------------------------------------------------------------------------------------->
+
+<body>
+    <div class="main-title">
+        <h2>English Test</h2>
+        <h2>Grammar</h2>
+    </div>
+    <div class="contains">
+        <div class="buttons-container">
+            <button id="button1">A0/A1 English</button>
+            <button id="button2">A2 English</button>
+            <button id="button3">B1 English</button>
+            <button id="button4">B2 English</button>
+            <button id="button5">C1 English</button>
+            <button id="button6">C2 English</button>
+        </div>
+        <div class="definitions-container">
+            <div id="def1" class="hidden">
+                <h1 class="title">A0/A1 English (Beginner/Elementary)</h1>
+                <div class="a0/a1">
+                    <h2>A0/A1 English (Beginner/Elementary)</h2>
+                    <h3>1. Choose the correct option:</h3>
+                    <div class="question">
+                        <p>_____ is your name?</p>
+                        <label><input type="radio" name="q1" value="a"> a) What</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) Who</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) Where</label><br>
+                    </div>
+                    <h3>2. Fill in the blank with the correct verb:</h3>
+                    <div class="question">
+                        <p>She ___ a student.</p>
+                        <label><input type="radio" name="q1" value="a"> a) am</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) is</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) are</label><br>
+                    </div>
+                    <h3>3. Choose the correct option:</h3>
+                    <div class="question">
+                        <p>I _____ 25 years old.</p>
+                        <label><input type="radio" name="q1" value="a"> a) is</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) are</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) am</label><br>
+                    </div>
+                    <h3>4. Fill in the blank with the correct article:</h3>
+                    <div class="question">
+                        <p>This is ___ apple.</p>
+                        <label><input type="radio" name="q1" value="a"> a) a</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) an</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) the</label><br>
+                    </div>
+                    <h3>5. Choose the correct negative sentence:</h3>
+                    <div class="question">
+                        <p>This is ___ apple.</p>
+                        <label><input type="radio" name="q1" value="a"> a) He don't like coffee.</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) He doesn't like coffee.</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) He not like coffee.</label><br>
+                    </div>
+                    <h3>6. Rearrange the words to make a correct sentence:</h3>
+                    <p><b>to / I / go / school / every day</b></p>
+                    <textarea class="error"></textarea>
+                    <h3>7. Fill in the blank with the correct pronoun:</h3>
+                    <div class="question">
+                        <p>This is my friend. ___ is very nice.</p>
+                        <label><input type="radio" name="q1" value="a"> a) He</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) She</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) It</label><br>
+                    </div>
+                    <h3>8. Choose the correct option:</h3>
+                    <div class="question">
+                        <p>They _____ from Spain.</p>
+                        <label><input type="radio" name="q1" value="a"> a) be</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) is</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) are</label><br>
+                    </div>
+                    <h3>9. Choose the correct preposition:</h3>
+                    <div class="question">
+                        <p>The book is ___ the table.</p>
+                        <label><input type="radio" name="q1" value="a"> a) on</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) in</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) at</label><br>
+                    </div>
+                    <h3>10. Fill in the blank with the correct possessive adjective:</h3>
+                    <div class="question">
+                        <p>This is ___ car. (I)</p>
+                        <label><input type="radio" name="q1" value="a"> a) me</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) my</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) mine</label><br>
+                    </div>
+                    <h3>Composition Topic: "My Daily Routine"</h3>
+                    <p>Write a short composition (5-7 sentences) about your daily routine.</p>
+                    <p>Use the following questions to help you:</p>
+                    <p>1. What time do you wake up?</p>
+                    <p>2. What do you do in the morning?</p>
+                    <p>3. What time do you go to school/work?</p>
+                    <p>4. What do you do in the afternoon?</p>
+                    <p>5. What do you do in the evening before bed?</p>
+                    <p><b>Try to use simple sentences and basic connectors like "and," "then," and "after that."</b></p>
+                    <textarea class="a0/a1-composition"></textarea>
+                </div>
+            </div>
+            <div id="def2" class="hidden">
+                <h1 class="title">A2 English (Pre Intermediate)</h1>
+                <div class="a2">
+                    <h2>A2 English (Pre Intermediate)</h2>
+                    <h3>1. Choose the correct option:</h3>
+                    <div class="question">
+                        <p>She _____ to the gym every Monday.</p>
+                        <label><input type="radio" name="q1" value="a"> a) go</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) goes</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) going</label><br>
+                    </div>
+                    <h3>2. Fill in the blank with the correct past simple form:</h3>
+                    <div class="question">
+                        <p>Yesterday, we ___ to the cinema.</p>
+                        <label><input type="radio" name="q1" value="a"> a) go</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) went</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) gone</label><br>
+                    </div>
+                    <h3>3. Choose the correct question form:</h3>
+                    <div class="question">
+                        <p>_____ you ever been to France?</p>
+                        <label><input type="radio" name="q1" value="a"> a) Did</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) Have</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) Are</label><br>
+                    </div>
+                    <h3>4. Fill in the blank with the correct comparative form:</h3>
+                    <div class="question">
+                        <p>This book is ___ than that one.</p>
+                        <label><input type="radio" name="q1" value="a"> a) more interesting</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) interestinger</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) most interesting</label><br>
+                    </div>
+                    <h3>5. Choose the correct sentence in future tense:</h3>
+                    <div class="question">
+                        <label><input type="radio" name="q1" value="a"> a) I will go to the party tomorrow.</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) I go to the party tomorrow.</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) I going to the party tomorrow.</label><br>
+                    </div>
+                    <h3>6. Choose the correct relative pronoun:</h3>
+                    <div class="question">
+                        <p>The man ___ lives next door is very kind.</p>
+                        <label><input type="radio" name="q1" value="a"> a) mwhere</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) who</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) which</label><br>
+                    </div>
+                    <h3>7. Fill in the blank with the correct modal verb:</h3>
+                    <div class="question">
+                        <p>You ___ study hard if you want to pass the exam.</p>
+                        <label><input type="radio" name="q1" value="a"> a) must</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) can</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) should</label><br>
+                    </div>
+                    <h3>8. Choose the correct sentence using "used to":</h3>
+                    <div class="question">
+                        <label><input type="radio" name="q1" value="a"> a) I used to play soccer when I was a child.</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) I use to play soccer when I was a child.</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) I am used to play soccer when I was a child.</label><br>
+                    </div>
+                    <h3>9. Choose the correct preposition:</h3>
+                    <div class="question">
+                        <p>She is good ___ playing the piano.</p>
+                        <label><input type="radio" name="q1" value="a"> a) in</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) at</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) on</label><br>
+                    </div>
+                    <h3>10. Fill in the blank with the correct present perfect form:</h3>
+                    <div class="question">
+                        <p>He ___ never tried sushi before.</p>
+                        <label><input type="radio" name="q1" value="a"> a) have</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) has</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) had</label><br>
+                    </div>
+                    <h3>Topic: My Favorite Place</h3>
+                    <p>Write a short composition (80-100 words) about your favorite place. Describe where it is, what it looks like, and why you like it. Use simple sentences and adjectives to give details.</p>
+                    <p>You can include:</p>
+                    <p>1. The name of the place</p>
+                    <p>2. What you can do there</p>
+                    <p>3. Who you go with</p>
+                    <p>4. Why it is special to you</p>
+                    <p><b>Example start:</b></p>
+                    <p>"My favorite place is the park near my house. It has green trees, a small lake, and a playground. I go there with my friends on weekends..."</p>
+                    <textarea class="a2-composition"></textarea>
+                </div>
+            </div>
+            <div id="def3" class="hidden">
+                <h1 class="title">B1 English (Intermediate)</h1>
+                <div class="c1">
+                    <h2>B1 English (Intermediate)</h2>
+                    <h3>Choose the correct answer:</h3>
+                    <div class="question">
+                        <p>1. I ______ to the gym three times a week.</p>
+                        <label><input type="radio" name="q1" value="a"> a) go</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) am going</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) goes</label><br>
+                    </div>
+                    <div class="question">
+                        <p>2. If I ______ more money, I would travel the world.</p>
+                        <label><input type="radio" name="q1" value="a"> a) have</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) had</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) will have</label><br>
+                    </div>
+                    <div class="question">
+                        <p>3. She has lived in London ______ 2015.</p>
+                        <label><input type="radio" name="q1" value="a"> a) Did</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) Have</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) Are</label><br>
+                    </div>
+                    <div class="question">
+                        <p>4. They ______ their homework when I called.</p>
+                        <label><input type="radio" name="q1" value="a"> a) did</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) were doing</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) are doing</label><br>
+                    </div>
+                    <div class="question">
+                        <p>5. I enjoy ______ to music in my free time.</p>
+                        <label><input type="radio" name="q1" value="a"> a) listen</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) listening</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) to listen</label><br>
+                    </div>
+                    <div class="question">
+                        <p>6. The book was ______ than I expected.</p>
+                        <label><input type="radio" name="q1" value="a"> a) more interesting</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) interestinger</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) most interesting</label><br>
+                    </div>
+                    <div class="question">
+                        <p>7. We need to leave now, ______ we will miss the train.</p>
+                        <label><input type="radio" name="q1" value="a"> a) so</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) but</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) or</label><br>
+                    </div>
+                    <div class="question">
+                        <p>8. He didn't pass the exam because he ______ enough.</p>
+                        <label><input type="radio" name="q1" value="a"> a) don't study</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) didn't study</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) hasn;t studied</label><br>
+                    </div>
+                    <div class="question">
+                        <p>9. Could you tell me where ______?</p>
+                        <label><input type="radio" name="q1" value="a"> a) is the nearest bus stop</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) the nearest bus stop is</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) does the nearest bus stop is</label><br>
+                    </div>
+                    <div class="question">
+                        <p>10. I haven't seen Tom ______ a long time.</p>
+                        <label><input type="radio" name="q1" value="a"> a) for</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) since</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) ago</label><br>
+                    </div>
+                    <h3>Topic: The Advantages and Disadvantages of Online Learning</h3>
+                    <p>Write a composition of 120-150 words discussing the advantages and disadvantages of online learning. In your composition, you should:</p>
+                    <p>Describe at least <b>two advantages</b> of online learning.</p>
+                    <p>Mention at least <b>two disadvantages</b> of online learning.</p>
+                    <p>Give your <b>own opinion</b> on whether online learning is better than traditional learning.</p>
+                    <p>Make sure to use clear and well-structured sentences. Use linking words such as <i>however, on the other hand, in addition, and for example</i> to make your writing more fluent.</p>
+                    <textarea class="b1-composition"></textarea>
+                </div>
+            </div>
+            <div id="def4" class="hidden">
+                <h1 class="title">B2 English (Intermediate)</h1>
+                <div class="b2">
+                    <h2>B2 English (Intermediate)</h2>
+                    <h3>Choose the correct option:</h3>
+                    <div class="question">
+                        <p>1. By this time next year, she ___ (complete) her master's degree.</p>
+                        <label><input type="radio" name="q1" value="a"> a) will complete</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) will have completed</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) completes</label><br>
+                    </div>
+                    <div class="question">
+                        <p>2. If I ___ harder, I would have passed the exam.</p>
+                        <label><input type="radio" name="q1" value="a"> a) studied</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) had studied</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) would study</label><br>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence in the passive voice:</h3>
+                        <p>3. They will release the new product next month.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Choose the correct relative pronoun:</h3>
+                        <p>4. The book ___ you lent me was really interesting.</p>
+                        <label><input type="radio" name="q1" value="a"> a) who</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) which</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) where</label><br>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite in reported speech:</h3>
+                        <p>5. "I can't come to the party," she said.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+
+                    </div>
+                    <div class="question">
+                        <h3>Choose the correct option:</h3>
+                        <p>6. He ___ be at home because his car is in the driveway.</p>
+                        <label><input type="radio" name="q1" value="a"> a) must</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) can't</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) might</label><br>
+                    </div>
+                    <div class="question">
+                        <p>7. I enjoy ___ to music in my free time.</p>
+                        <label><input type="radio" name="q1" value="a"> a) listen</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) listening</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) to listen</label><br>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite using inversion:</h3>
+                        <p>8. If I had known, I would have helped you.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <h3>Choose the correct option:</h3>
+                    <div class="question">
+                        <p>9. She apologized ___ being late.</p>
+                        <label><input type="radio" name="q1" value="a"> a) for</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) of</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) about</label><br>
+                    </div>
+                    <div class="question">
+                        <p>10. I had ___ amazing time at the concert last night.</p>
+                        <label><input type="radio" name="q1" value="a"> a) a</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) an</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) the</label><br>
+                    </div>
+                    <h3>Topic: The Impact of Technology on Daily Life</h3>
+                    <h3>Enunciation:</h3>
+                    <p>In today's world, technology plays a crucial role in our everyday lives. From communication and work to entertainment and education, digital advancements have changed the way we live. However, some people believe that we rely too much on technology, which may have negative effects on our social interactions and well-being.</p>
+                    <p>Write a composition of 180-220 words discussing the role of technology in daily life.</p>
+                    <h3>Include the following points:</h3>
+                    <p><b>Advantages</b> of technology in everyday activities (e.g., convenience, access to information, efficiency).</p>
+                    <p><b>Disadvantages</b> of depending too much on technology (e.g., reduced face-to-face communication, health issues).</p>
+                    <p>Your <b>personal opinion:</b> Do you think technology has improved our lives more than it has harmed them? Why or why not?</p>
+                    <p>Use a clear structure with <b>an introduction, body paragraphs, and a conclusion</b>. Try to include linking words (e.g., however, therefore, on the other hand) and a variety of grammatical structures to show your B2-level skills.</p>
+                    <textarea class="b2-composition"></textarea>
+                </div>
+            </div>
+            <div id="def5" class="hidden">
+                <h1 class="title">C1 English (Advanced)</h1>
+                <div class="b2">
+                    <h2>C1 English (Advanced)</h2>
+                    <h3>Choose the correct option:</h3>
+                    <div class="question">
+                        <p>1. If she ___ (listen) to my advice last week, she ___ (not be) in trouble now.</p>
+                        <label><input type="radio" name="q1" value="a"> a) listened / wouldn't be</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) had listened / wouldn't be</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) had listened / wouldn't have been</label><br>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence in the passive voice:</h3>
+                        <p>2. People believe that the scientist has discovered a new planet.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence using inversion:</h3>
+                        <p>4. Because she didn't study enough, she failed the exam.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence using a noun form:</h3>
+                        <p>5. He <b>decided</b> to leave the company.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Choose the correct option:</h3>
+                        <p>6. He ___ (forget) about our meeting. That's why he didn't show up.</p>
+                        <label><input type="radio" name="q1" value="a"> a) must forget</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) must have forgotten</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) can have forgotten</label><br>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence using a cleft sentence:</h3>
+                        <p>7. I really enjoyed the book.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Choose the correct option:</h3>
+                        <p>8. By this time next year, I ___ (finish) my degree and ___ (look) for a job.</p>
+                        <label><input type="radio" name="q1" value="a"> a) will finish / will look</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) will have finished / will be looking</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) will be finishing / will look</label><br>
+                    </div>
+                    <div class="question">
+                        <p>9. The company ___ I applied ___ offered me a job.</p>
+                        <label><input type="radio" name="q1" value="a"> a) which / to</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) to which / -</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) which / -</label><br>
+                    </div>
+                    <div class="question">
+                        <p>10. The longer you wait, ___ it will be to fix the problem.</p>
+                        <label><input type="radio" name="q1" value="a"> a) the difficult</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) the most difficult</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) the more difficult</label><br>
+                    </div>
+                    <h3>Topic: The Role of Failure in Success</h3>
+                    <h3>Enunciation:</h3>
+                    <p>Many people view failure as something negative, but others argue that it is an essential part of success. Throughout history, some of the most successful individuals have experienced failure before achieving their goals. However, some believe that failure can be discouraging and prevent people from trying again.</p>
+                    <p>Write a 250-300 word essay discussing the importance of failure in achieving success.</p>
+                    <h3>Include the following points:</h3>
+                    <p><b>Arguments in favor</b> of failure being a valuable learning experience (e.g., resilience, innovation, self-improvement).</p>
+                    <p><b>Counterarguments:</b> Can failure have negative effects, such as lowering motivation or causing financial loss?</p>
+                    <p><b>Your personal opinion:</b> Do you believe failure is necessary for success? Why or why not?</p>
+                    <p>Use a <b>formal tone, cohesive structure, and advanced grammatical structures</b> (e.g., inversion, cleft sentences, participle clauses). Make sure to include linking words (nevertheless, consequently, on the contrary, not only…but also).</p>
+                    <textarea class="c1-composition"></textarea>
+                </div>
+            </div>
+            <div id="def6" class="hidden">
+                <h1 class="title">C2 English (Advanced)</h1>
+                <div class="c2">
+                    <h2>C2 English (Advanced)</h2>
+                    <div class="question">
+                        <h3>Rewrite the sentence using inversion:</h3>
+                        <p>1. She had rarely seen such an impressive performance.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Choose the correct option:</h3>
+                        <p>2. He prefers classical music, but I don't ___.</p>
+                        <label><input type="radio" name="q1" value="a"> a) like</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) do</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) prefer</label><br>
+                    </div>
+                    <div class="question">
+                        <p>3. If she ___ (take) the job offer last year, she ___ (work) in New York now.</p>
+                        <label><input type="radio" name="q1" value="a"> a) took / would be working</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) had taken / would be working</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) took / would have been working</label><br>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence using a cleft structure:</h3>
+                        <p>4. Her dedication impressed me the most.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence using nominalization:</h3>
+                        <p>5. The manager <b>decided</b> to implement new policies.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence using a participle clause:</h3>
+                        <p>6. Since she knew the risks, she proceeded with caution.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Rewrite the sentence in the passive voice:</h3>
+                        <p>7. They rumored that the politician was involved in the scandal.</p>
+                        <textarea class="a0/a1-composition"></textarea>
+                    </div>
+                    <div class="question">
+                        <h3>Choose the correct option:</h3>
+                        <p>8. It is essential that he ___ on time.</p>
+                        <label><input type="radio" name="q1" value="a"> a) is</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) be</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) was</label><br>
+                    </div>
+                    <div class="question">
+                        <p>9. His ideas are not in accordance ___ company policy.</p>
+                        <label><input type="radio" name="q1" value="a"> a) to</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) of</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) with</label><br>
+                    </div>
+                    <div class="question">
+                        <p>10. This project is ___ than I expected.</p>
+                        <label><input type="radio" name="q1" value="a"> a) far more challenging</label><br>
+                        <label><input type="radio" name="q1" value="b"> b) much challenging</label><br>
+                        <label><input type="radio" name="q1" value="c"> c) more challenging far</label><br>
+                    </div>
+                    <h3>Topic: Is True Freedom an Illusion in Modern Society?</h3>
+                    <h3>Enunciation:</h3>
+                    <p>Freedom is often regarded as one of the most fundamental human rights, yet in today's highly structured societies, some argue that true freedom is an illusion. Laws, social norms, economic pressures, and even digital surveillance shape and limit people's choices, often without them realizing it. On the other hand, many believe that these structures exist to maintain order and protect individuals, rather than restrict their freedoms.</p>
+                    <p>Write a 300-350 word essay discussing whether true freedom exists in modern society.</p>
+                    <h3>Include the following points:</h3>
+                    <p><b>The meaning of freedom</b> - Is it simply the absence of restrictions, or does it also involve responsibility and ethical considerations?</p>
+                    <p><b>Factors that limit freedom</b>, such as laws, societal expectations, and technology. Are these limitations necessary?</p>
+                    <p><b>Counterarguments</b> - Can freedom exist within boundaries? Do we enjoy more freedom today than in the past?</p>
+                    <p><b>Your personal perspective</b> - Do you believe we are truly free, or are we controlled in ways we fail to notice?</p>
+                    <p>Use a formal and sophisticated tone, integrating advanced grammatical structures such as inversion, cleft sentences, participle clauses, and nominalization. Ensure cohesion through the use of discourse markers (moreover, conversely, notwithstanding, it could be argued that...).</p>
+                    <textarea class="c2-composition"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <button onclick="sendAnswers()" class="send-answers">Send Answers</button>
+    <p id="confirmation">Essay has been successfully sent!</p> -->
+    <script src="test/test.js"></script>
+    <!--Footer-->
+    <!-------------------------------------------------------------------------------------------->
+    <footer>
+        <div class="footerContainer">
+            <div class="footerBottom">
+                <p>Copyright &copy; 2025 I Designed by <a href="https://www.instagram.com/victor__sva/" draggable="false"><span class="designer">Sasu Victor</span></a></p>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------------------------------->
+</body>
+</html>

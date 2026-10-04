@@ -1,0 +1,481 @@
+/* .hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;    
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+  background-color: #009BE1;
+}
+
+
+/*Navigation Bar*/
+/*----------------------------------------------------------------------------------------------------------------*/
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+.bar-colored{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1010;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: #009BE1;
+}
+.logo{
+  font-size: 30px;
+  font-weight: 700;
+  color: #525252;
+}
+.navlist{
+  display: flex;
+}
+.navlist a{
+  color: #525252;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom: 2px solid #525252;
+}
+#menu-icon{
+  color: #525252;
+  font-size: 35px;
+  z-index: 1001;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width: 1535px){
+header{
+    padding: 15px 3%;
+    transition: .2s;
+}
+.icons{
+    padding: 0 3%;
+    transition: .2s;
+}
+.scroll-down{
+    right: 3%;
+    transition: .2s;
+}
+}
+@media(max-width: 1460px){
+section{
+    padding: 0 12%;
+    transition: .2s;
+}
+}
+@media(max-width: 1340px){
+.hero-img img{
+    width: 100%;
+    height: auto;
+}
+.hero-text h1{
+    font-size: 75px;
+    margin: 0 0 30px
+}
+.hero-text h5{
+    margin-bottom: 25px;
+}
+}
+@media(max-width: 1195px){
+section{
+    padding: 0 3%;
+    transition: .2s;
+}
+.hero-text{
+    padding-top: 115px;
+}
+.hero-img{
+    text-align: center;
+}
+.hero{
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.icons{
+    display: none;
+}
+.scroll-down{
+    display: none;
+}
+}
+@media(max-width: 990px){
+#menu-icon{
+    display: block;
+}
+.navlist{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 100%;
+    height: 60vh;
+    background: #009BE1;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all .55s ease;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.logo{
+  color: #525252;
+}
+.navlist a{
+    margin-left: 0;
+    display: block;
+    margin: 7px 0;
+    font-size: 20px;
+    color: white;
+}
+.bar-colored.open{
+  transition: all .55s ease;
+  color: white;
+}
+.navlist.open{
+  top: 99%;
+  right: 0;
+}
+}
+@media(max-width: 400px){
+  .hero-img img{
+    width: 100%;
+    height: auto;
+}
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+.section{
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+/*Grammar Books*/
+/*----------------------------------------------------------------------------------------------------------------*/
+.grammar-aux{
+  place-items: center;
+  padding: 5%;
+}
+.grammar{
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 10%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #172C50;
+}
+.grammar h2{
+  padding-top: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+  color: white;
+  font-size: 60px;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*Literature Books*/
+/*----------------------------------------------------------------------------------------------------------------*/
+.literature-aux{
+  place-items: center;
+  padding: 5%;
+}
+.literature{
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 10%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #8C0014;
+}
+.literature h2{
+  padding-top: 5%;
+  text-align: center;
+  margin-bottom: 5%;
+  color: white;
+  font-size: 60px;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*Books*/
+/*----------------------------------------------------------------------------------------------------------------*/
+.align{
+  padding: 5% 0 5% 10%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+}
+.cover{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  background-size: cover;
+  transform-origin: 0;
+  box-shadow: 1px 1px 12px #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.destinationc1c2{
+  background-image: url(./img/cartzi/destinationc1c2.jpg);
+}
+.upstreamb2plus{
+  background-image: url(./img/cartzi/b2+.jpg);
+}
+.upstreamb2{
+  background-image: url(./img/cartzi/b2.jpg);
+}
+.b2activ{
+  background-image: url(./img/cartzi/b2activ.jpg);
+}
+.b2key{
+  background-image: url(./img/cartzi/b2key.jpg);
+}
+.c1key{
+  background-image: url(./img/cartzi/c1key.jpg);
+}
+.percyjackson{
+  background-image: url(./img/cartzi/percyjackson.jpg);
+}
+.harrypotter{
+  background-image: url(./img/cartzi/harrypotter.jpg);
+}
+.prideandprejudice{
+  background-image: url(./img/cartzi/prideandprejudice.jpg);
+}
+.senseandsensibility{
+  background-image: url(./img/cartzi/senseandsensibility.jpg);
+}
+.thecaterpillar{
+  background-image: url(./img/cartzi/thecaterpillar.jpg);
+  background-size: contain;
+}
+.crimeandpunishment{
+  background-image: url(./img/cartzi/crimeandpunishment.jpg);
+}
+@media(max-width: 1195px){
+}
+@media(max-width: 900px){
+}
+@media(max-width: 440px){
+  .grammar h2, .literature h2{
+    font-size: 30px;
+  }
+  .align{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.book{
+  position: relative;
+  width: 260px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #effffe;
+  box-shadow: 1px 1px 12px #000;
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+}
+
+.book:hover .cover{
+  transition: all 0.5s;
+  transform: rotatey(-80deg);
+}
+
+.cover > p{
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.cover > h2 > span{
+  color: #1076c9;
+  font-size: 28px;
+  font-weight: border;
+}
+.content > p{
+  margin-bottom: 10px;
+}
+.youtube-channel{
+  color: red;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+/*Videos*/
+/*----------------------------------------------------------------------------------------------------------------*/
+.container{
+  padding: 5%;
+}
+.surrounding{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/10053371.jpg");
+  background-size: cover;
+  border-radius: 25px;
+  padding: 1%;
+}
+.start{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 60px;
+}
+
+.videos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+@media(max-width: 990px){
+  .start h2{
+    margin-top: 40%;
+    margin-bottom: 20%;
+    font-size: 40px;
+  }
+}
+/*----------------------------------------------------------------------------------------------------------------*/  
+
+/*Footer*/
+/*----------------------------------------------------------------------------------------------------------------*/
+footer{
+    background: #111;
+  }
+  .footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+  }
+  /* Hover affect on social media icon */
+  .socialIcons a:hover{
+    background: #111;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  .footerNav{
+    margin: 30px 0;
+  }
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+    padding: 20px;
+    text-align: center;
+  }
+  .footerBottom p, .footerBottom a{
+    color: white;
+  }
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  @media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+  }
+  /*----------------------------------------------------------------------------------------------------------------*/

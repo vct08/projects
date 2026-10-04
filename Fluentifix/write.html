@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluentifix</title>
+    <link rel="website icon" type="png" href="write/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="write/write.css">
+</head>
+
+<!--Navigation Bar-->
+<!-------------------------------------------------------------------------------------------->
+<header class="navigation-bar">
+    <a href="index.html" class="logo" draggable="false">Fluentifix</a>
+    
+    <ul class="navlist">
+        <li><a href="index.html" draggable="false">Home</a></li>
+        <li><a href="learn.html" draggable="false">Learning</a></li>
+        <li><a href="read.html" draggable="false">Reading</a></li>
+        <li><a href="write.html" draggable="false">Writing</a></li>
+        <li><a href="speak.html" draggable="false">Speaking</a></li>
+        <li><a href="resources.html" draggable="false">Resources</a></li>
+        <li><a href="test.html" draggable="false">Test</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon" draggable="false"></div>
+</header>
+<!-------------------------------------------------------------------------------------------->
+
+
+<body>
+    <div class="title">
+        <h1>Writing</h1>
+    </div>
+    <div class="level-buttons">
+        <h2>Sections:</h2>
+        <a href="#a1a2">A1/A2</a>
+        <a href="#b1b2">B1/B2</a>
+        <a href="#c1c2">C1/C2</a>
+    </div>
+    <section id="a1a2" class="pages">
+        <h2 class="sub-title">Beginner (A1-A2)</h2>
+        <div class="levels a1a2">
+            <h3>1.Describe your daily routine.</h3>
+            <h3>Short Example</h3>
+            <p>Every day, I wake up at 7 AM. I brush my teeth, take a shower, and eat breakfast. Then, I go to school at 8 AM. I study different subjects like math, English, and science. After school, I do my homework and play with my friends. In the evening, I have dinner with my family and watch TV. I go to bed at 10 PM.</p>
+            <textarea id="essayText1" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay1()">SEND</button>
+                    <p id="confirmation1" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels a1a2">
+            <h3>2. Write about your favorite hobby.</h3>
+            <h3>Short Example</h3>
+            <p>My favorite hobby is painting. I love using bright colors to make pictures of nature, animals, and people. Painting makes me feel happy and relaxed. On weekends, I spend hours painting in my room. One day, I hope to be a great artist!</p>
+            <textarea id="essayText2" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay2()">SEND</button>
+                    <p id="confirmation2" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels a1a2">
+            <h3>3. Introduce yourself and your family.</h3>
+            <h3>Short Example</h3>
+            <p>My name is Anna. I am 12 years old, and I live in Spain. My family has four members: my father, my mother, my brother, and me. My father is a doctor, and my mother is a teacher. My brother is 8 years old, and he loves playing football. We are a happy family, and we love spending time together.</p>
+            <textarea id="essayText3" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay3()">SEND</button>
+                    <p id="confirmation3" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels a1a2">
+            <h3>4. Describe your last holiday.</h3>
+            <h3>Short Example</h3>
+            <p>Last summer, I went to the beach with my family. We stayed in a hotel near the sea. I swam in the ocean, built sandcastles, and ate a lot of ice cream. The weather was sunny, and we had so much fun! I hope to go back next year.</p>
+            <textarea id="essayText4" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay4()">SEND</button>
+                    <p id="confirmation4" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels a1a2">
+            <h3>5. What is your favorite food and why?</h3>
+            <h3>Short Example</h3>
+            <p>My favorite food is pizza. I love the taste of cheese, tomato sauce, and crispy crust. My favorite topping is pepperoni. Pizza is easy to eat and always makes me happy. I eat pizza every Friday with my family.</p>
+            <textarea id="essayText5" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay5()">SEND</button>
+                    <p id="confirmation5" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels a1a2">
+            <h3>6. A letter to a friend about your weekend.</h3>
+            <h3>Short Example</h3>
+            <p>Dear Lisa,</p>
+            <p>How are you? I had a great weekend! On Saturday, I went to the park with my family and played football. On Sunday, I watched a movie and ate popcorn. It was so much fun! What did you do this weekend?</p>
+            <p>See you soon!</p>
+            <p>Love,</p>
+            <p>Emma</p>
+            <textarea id="essayText6" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay6()">SEND</button>
+                    <p id="confirmation6" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="b1b2" class="pages">
+        <h2 class="sub-title">Intermediate (B1-B2)</h2>
+        <div class="levels b1b2">
+            <h3>1. Discuss the pros and cons of social media.</h3>
+            <h3>Short Example</h3>
+            <p>Social media has both advantages and disadvantages. On the positive side, it helps people stay connected, share information, and learn new things. However, it also has drawbacks, such as cyberbullying, privacy issues, and addiction. It is important to use social media wisely and not spend too much time online.</p>
+            <textarea id="essayText7" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay7()">SEND</button>
+                    <p id="confirmation7" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels b1b2">
+            <h3>2. Write about a memorable event in your life.</h3>
+            <h3>Short Example</h3>
+            <p>One of the most memorable events in my life was my first trip abroad. I went to Italy with my family. We visited Rome, saw the Colosseum, and ate delicious pasta. I was amazed by the beautiful architecture and history. It was an unforgettable experience, and I hope to travel more in the future.</p>
+            <textarea id="essayText8" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay8()">SEND</button>
+                    <p id="confirmation8" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels b1b2">
+            <h3>3. What are the advantages of learning a second language?</h3>
+            <h3>Short Example</h3>
+            <p>Learning a second language has many benefits. It helps people communicate with others from different countries, improves job opportunities, and makes travel easier. It also helps develop the brain and improves memory. Speaking more than one language is very useful in today's world.</p>
+            <textarea id="essayText9" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay9()">SEND</button>
+                    <p id="confirmation9" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels b1b2">
+            <h3>4. Explain how to stay healthy and fit.</h3>
+            <h3>Short Example</h3>
+            <p>To stay healthy, people should eat a balanced diet, exercise regularly, and get enough sleep. Drinking water, avoiding junk food, and reducing stress are also important. Walking, running, and playing sports can help keep the body fit and strong. A healthy lifestyle leads to a happier life.</p>
+            <textarea id="essayText10" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay10()">SEND</button>
+                    <p id="confirmation10" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels b1b2">
+            <h3>5. Describe your dream job and why you chose it.</h3>
+            <h3>Short Example</h3>
+            <p>My dream job is to be a doctor. I love helping people and want to save lives. Doctors work hard, but they make a big difference in the world. I want to study medicine and learn how to treat different illnesses. One day, I hope to work in a hospital and help many patients.</p>
+            <textarea id="essayText11" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay11()">SEND</button>
+                    <p id="confirmation11" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels b1b2">
+            <h3>6. Compare city life and village life.</h3>
+            <h3>Short Example</h3>
+            <p>City life and village life are very different. In the city, there are many job opportunities, shopping centers, and entertainment options. However, it is also noisy and crowded. In contrast, village life is peaceful and close to nature, but there are fewer schools and hospitals. Both have advantages, and the choice depends on personal preference.</p>
+            <textarea id="essayText12" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay12()">SEND</button>
+                    <p id="confirmation12" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="c1c2" class="pages">
+        <h2 class="sub-title">Advanced (C1-C2)</h2>
+        <div class="levels c1c2">
+            <h3>1. Analyze the impact of artificial intelligence on society.</h3>
+            <h3>Short Example</h3>
+            <p>Artificial intelligence (AI) is transforming society in many ways. It improves efficiency in industries, enhances medical diagnoses, and automates repetitive tasks. However, it also raises concerns about job displacement, privacy risks, and ethical dilemmas. While AI has great potential, it is crucial to implement regulations to ensure responsible use and minimize negative consequences.</p>
+            <textarea id="essayText13" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay13()">SEND</button>
+                    <p id="confirmation13" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels c1c2">
+            <h3>2. Discuss how climate change affects different regions.</h3>
+            <h3>Short Example</h3>
+            <p>Climate change has diverse effects worldwide. In coastal areas, rising sea levels threaten homes and livelihoods. In dry regions, droughts and desertification reduce agricultural productivity. Polar regions experience melting ice caps, endangering wildlife. Governments must take urgent action to reduce carbon emissions and promote sustainable practices.</p>
+            <textarea id="essayText14" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay14()">SEND</button>
+                    <p id="confirmation14" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels c1c2">
+            <h3>3. Should governments regulate social media platforms?</h3>
+            <h3>Short Example</h3>
+            <p>Governments should regulate social media to protect users from misinformation, cyberbullying, and privacy violations. However, excessive control could limit freedom of speech. A balanced approach is necessary, where platforms implement ethical guidelines while ensuring users' rights are protected. Regulation should focus on transparency, accountability, and responsible content moderation.</p>
+            <textarea id="essayText15" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay15()">SEND</button>
+                    <p id="confirmation15" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels c1c2">
+            <h3>4. The role of education in reducing economic inequality.</h3>
+            <h3>Short Example</h3>
+            <p>Education plays a vital role in bridging the economic gap. Access to quality education provides individuals with better job opportunities and economic mobility. Governments should invest in affordable education, vocational training, and scholarships to ensure equal opportunities for all. Reducing educational disparities can lead to a more equitable society.</p>
+            <textarea id="essayText16" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay16()">SEND</button>
+                    <p id="confirmation16" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels c1c2">
+            <h3>5. How has globalization changed cultural identity?</h3>
+            <h3>Short Example</h3>
+            <p>Globalization has both preserved and altered cultural identities. On one hand, it allows for cultural exchange and appreciation, leading to diversity in food, music, and traditions. On the other hand, some cultures risk being overshadowed by dominant global influences. Balancing globalization with cultural preservation is essential to maintaining identity while embracing progress.</p>
+            <textarea id="essayText17" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay17()">SEND</button>
+                    <p id="confirmation17" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+        <div class="levels c1c2">
+            <h3>6. The ethics of genetic engineering and human cloning.</h3>
+            <h3>Short Example</h3>
+            <p>Genetic engineering and human cloning raise serious ethical questions. While they offer medical advancements such as curing genetic diseases, they also pose risks related to human identity, inequality, and moral dilemmas. Scientists and policymakers must establish clear ethical guidelines to ensure responsible and fair use of these technologies.</p>
+            <textarea id="essayText18" placeholder="Start writing your essay here..."></textarea>
+            <div class="down">
+                <div class="wrapper">
+                    <div class="box">
+                        <div class="input-bx">
+                            <h2 class="upload-area-title">Upload File</h2>
+                            <form action="">
+                                <input type="file" id="upload" accept=".doc, .docs, .pdf" hidden>
+                                <label for="upload" class="uploadlabel">
+                                    <span><i class="fa fa-cloud-upload"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </form>
+                        </div>
+                        <div id="filewrapper">
+                            <h3 class="uploaded">Uploaded Documents</h3>
+                            <div class="showfilebox">
+                                <div class="left">
+                                    <span class="filetype">Pdf</span>
+                                    <h3>VictorVTM.pdf</h3>
+                                </div>
+                                <div class="right">
+                                    <span>&#215</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <h2>If you don't want to type, we have the best solution. Just upload it!</h2>
+                    <button onclick="sendEssay18()">SEND</button>
+                    <p id="confirmation18" class="confirmation">Essay has been successfully sent!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="write/write.js"></script>
+
+
+<!--Footer-->
+<!-------------------------------------------------------------------------------------------->
+<footer>
+    <div class="footerContainer">
+        <div class="footerBottom">
+            <p>Copyright &copy; 2025 I Designed by <a href="https://www.instagram.com/victor__sva/" draggable="false"><span class="designer">Sasu Victor</span></a></p>
+        </div>
+    </div>
+</footer>
+<!-------------------------------------------------------------------------------------------->
+</body>
+</html>
